@@ -1,0 +1,38 @@
+# user-specific stuff
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# sensitive or high-churn files
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# gradle
+.idea/gradle.xml
+.idea/libraries
+
+# mongo Explorer plugin
+.idea/mongoSettings.xml
+
+# build
+/dist
+
+# intelliJ project files
+.idea
+*.iml
+
+# logs
+/*.log
+
+# node js
+/node_modules
+/bower_components
+
+# mac
+.DS_Store

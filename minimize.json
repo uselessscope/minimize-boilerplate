@@ -1,0 +1,76 @@
+{
+  "src": "./src",
+  "dest": "./dist",
+  "paths": {
+    "views": {
+      "src": "./src/views",
+      "dest": "./dist/views"
+    },
+    "styles": {
+      "src": "./src/styles",
+      "dest": "./dist/styles"
+    },
+    "scripts": {
+      "src": "./src/scripts",
+      "dest": "./dist/scripts"
+    },
+    "fonts": {
+      "src": "./src/fonts",
+      "dest": "./dist/fonts"
+    },
+    "images": {
+      "src": "./src/images",
+      "dest": "./dist/images"
+    },
+    "favicons": {
+      "src": "./src/favicons",
+      "dest": "./dist"
+    },
+    "svg": {
+      "src": "./src/images/svg",
+      "dest": "./dist/images/svg"
+    }
+  },
+  "tasks": {
+    "views": {
+      "includes": ["{% paths.views.src %}/**/*.{html}"],
+      "outdir": "{% paths.views.dest %}"
+    },
+    "styles": {
+      "infile": "{% paths.styles.src %}/index.css",
+      "outfile": "{% paths.styles.dest %}/index.css"
+    },
+    "scripts": {
+      "infile": "{% paths.scripts.src %}/app.js",
+      "outfile": "{% paths.scripts.dest %}/app.js"
+    },
+    "fonts": {
+      "includes": ["{% paths.fonts.src %}/**/*.{ttf,otf,woff,woff2,eot}"],
+      "outdir": "{% paths.fonts.dest %}"
+    },
+    "images": {
+      "includes": ["{% paths.images.src %}/**/*.{png,jpg,gif}"],
+      "excludes": ["{% paths.svg.src %}"],
+      "outdir": "{% paths.images.dest %}"
+    },
+    "favicons": {
+      "includes": [
+        "{% paths.favicons.src %}/**/*.{ico,png,svg,xml,webmanifest}"
+      ],
+      "outdir": "{% paths.favicons.dest %}"
+    },
+    "svg": {
+      "includes": ["{% paths.svg.src %}/**/*.{svg}"],
+      "outfile": "{% paths.svg.dest %}/sprite.svg"
+    }
+  },
+  "strategies": {
+    "views": "html",
+    "styles": "css",
+    "scripts": "esbuild",
+    "fonts": "none",
+    "favicons": "none",
+    "images": "none",
+    "svg": "svg-mixer"
+  }
+}
