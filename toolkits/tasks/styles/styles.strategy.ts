@@ -5,7 +5,7 @@ import { SassStrategy } from "@/toolkits/tasks/styles/strategies/sass.strategy";
 import { ScssStrategy } from "@/toolkits/tasks/styles/strategies/scss.strategy";
 
 export class StylesStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: StylesNameStrategy) {
     let strategy;
 
     switch (value) {

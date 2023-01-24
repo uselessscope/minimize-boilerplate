@@ -3,7 +3,7 @@ import { SvgNameStrategy } from "@/toolkits/tasks/svg/svg.types";
 import { SvgMixerStrategy } from "@/toolkits/tasks/svg/strategies/svg-mixer.strategy";
 
 export class SvgStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: SvgNameStrategy) {
     let strategy;
 
     switch (value) {

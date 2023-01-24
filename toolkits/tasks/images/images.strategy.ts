@@ -3,7 +3,7 @@ import { ImagesNameStrategy } from "@/toolkits/tasks/images/images.types";
 import { DefaultImagesStrategy } from "@/toolkits/tasks/images/strategies/default-images.strategy";
 
 export class ImagesStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: ImagesNameStrategy) {
     let strategy;
 
     switch (value) {

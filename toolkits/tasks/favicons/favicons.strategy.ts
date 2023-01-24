@@ -3,7 +3,7 @@ import { FaviconsNameStrategy } from "@/toolkits/tasks/favicons/favicons.types";
 import { DefaultFaviconsStrategy } from "@/toolkits/tasks/favicons/strategies/default-favicons.strategy";
 
 export class FaviconsStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: FaviconsNameStrategy) {
     let strategy;
 
     switch (value) {

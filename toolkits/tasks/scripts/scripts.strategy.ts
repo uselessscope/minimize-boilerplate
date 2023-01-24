@@ -3,7 +3,7 @@ import { EsbuildStrategy } from "@/toolkits/tasks/scripts/strategies/esbuild.str
 import { ScriptsNameStrategy } from "@/toolkits/tasks/scripts/scripts.types";
 
 export class ScriptsStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: ScriptsNameStrategy) {
     let strategy;
 
     switch (value) {

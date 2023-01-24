@@ -4,7 +4,7 @@ import { HtmlStrategy } from "@/toolkits/tasks/views/strategies/html.strategy";
 import { PugStrategy } from "@/toolkits/tasks/views/strategies/pug.strategy";
 
 export class ViewsStrategy extends TaskStrategy {
-  constructor(value: string) {
+  constructor(value: ViewsNameStrategy) {
     let strategy;
 
     switch (value) {
