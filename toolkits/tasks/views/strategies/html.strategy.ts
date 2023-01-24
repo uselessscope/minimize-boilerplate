@@ -1,11 +1,7 @@
 import { ViewsStrategy } from "@/toolkits/tasks/views/views.types";
 
 export class HtmlStrategy implements ViewsStrategy {
-  precompile(): boolean {
-    return true;
-  }
+  precompile(): void {}
 
-  compile(): boolean {
-    return true;
-  }
+  compile(): void {}
 }

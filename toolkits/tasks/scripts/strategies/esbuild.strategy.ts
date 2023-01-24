@@ -1,11 +1,7 @@
 import { ScriptsStrategy } from "@/toolkits/tasks/scripts/scripts.types";
 
 export class EsbuildStrategy implements ScriptsStrategy {
-  precompile(): boolean {
-    return true;
-  }
+  precompile(): void {}
 
-  compile(): boolean {
-    return true;
-  }
+  compile(): void {}
 }

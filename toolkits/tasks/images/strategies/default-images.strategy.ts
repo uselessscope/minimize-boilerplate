@@ -1,11 +1,7 @@
 import { ImagesStrategy } from "@/toolkits/tasks/images/images.types";
 
 export class DefaultImagesStrategy implements ImagesStrategy {
-  precompile(): boolean {
-    return true;
-  }
+  precompile(): void {}
 
-  compile(): boolean {
-    return true;
-  }
+  compile(): void {}
 }

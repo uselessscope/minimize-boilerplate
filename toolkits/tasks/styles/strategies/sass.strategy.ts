@@ -1,11 +1,7 @@
 import { StylesStrategy } from "@/toolkits/tasks/styles/styles.types";
 
 export class SassStrategy implements StylesStrategy {
-  precompile(): boolean {
-    return true;
-  }
+  precompile(): void {}
 
-  compile(): boolean {
-    return true;
-  }
+  compile(): void {}
 }

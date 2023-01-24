@@ -1,11 +1,7 @@
 import { FaviconsStrategy } from "@/toolkits/tasks/favicons/favicons.types";
 
 export class DefaultFaviconsStrategy implements FaviconsStrategy {
-  precompile(): boolean {
-    return true;
-  }
+  precompile(): void {}
 
-  compile(): boolean {
-    return true;
-  }
+  compile(): void {}
 }

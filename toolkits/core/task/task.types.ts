@@ -1,4 +1,4 @@
 export interface TaskStrategy {
-  precompile(): boolean;
-  compile(): boolean;
+  precompile(): void;
+  compile(): void;
 }
